@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Nullgate's Poisons - Forever: a poison vial and a dripping dagger -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232d3d"/>
+      <stop offset="1" stop-color="#0f141c"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0d27a"/>
+      <stop offset="0.5" stop-color="#c9a54e"/>
+      <stop offset="1" stop-color="#8a6a26"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f4f8fb"/>
+      <stop offset="0.5" stop-color="#c3ccd6"/>
+      <stop offset="1" stop-color="#7c8896"/>
+    </linearGradient>
+    <linearGradient id="poison" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c6ff6a"/>
+      <stop offset="1" stop-color="#3f9a12"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <radialGradient id="toxic" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9dff4a" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2f7a0c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- frame -->
+  <rect x="20" y="20" width="472" height="472" rx="64" fill="url(#bg)"/>
+  <rect x="20" y="20" width="472" height="472" rx="64" fill="none" stroke="url(#gold)" stroke-width="16"/>
+  <rect x="44" y="44" width="424" height="424" rx="44" fill="none" stroke="#c9a54e" stroke-opacity="0.35" stroke-width="3"/>
+
+  <circle cx="256" cy="270" r="190" fill="url(#toxic)"/>
+
+  <!-- dagger, point down-left, behind the vial -->
+  <g transform="rotate(38 300 240)">
+    <path d="M286 300 L300 96 L314 300 Z" fill="#c6ff6a" opacity="0.35" filter="url(#glow)"/>
+    <path d="M286 300 L300 96 L314 300 Z" fill="url(#blade)" stroke="#4a5562" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M300 112 L300 296" stroke="#6b7684" stroke-width="3"/>
+    <!-- poison coating on the tip -->
+    <path d="M293 200 L300 96 L307 200 Q300 210 293 200 Z" fill="#7fe02a" opacity="0.75"/>
+    <rect x="258" y="300" width="84" height="16" rx="8" fill="url(#gold)" stroke="#5e4614" stroke-width="4"/>
+    <rect x="291" y="316" width="18" height="62" rx="6" fill="#3b2a1e" stroke="#1d140d" stroke-width="4"/>
+    <circle cx="300" cy="388" r="13" fill="url(#gold)" stroke="#5e4614" stroke-width="4"/>
+  </g>
+
+  <!-- vial -->
+  <g transform="translate(0,20)">
+    <ellipse cx="196" cy="420" rx="84" ry="14" fill="#000000" opacity="0.35"/>
+    <path d="M176 196 L176 252 C120 272 104 316 112 352 C122 398 160 418 196 418 C232 418 270 398 280 352 C288 316 272 272 216 252 L216 196 Z" fill="#9dff4a" opacity="0.35" filter="url(#glow)"/>
+    <!-- liquid -->
+    <path d="M118 318 C140 304 160 326 196 314 C230 302 250 322 274 314 C284 340 278 372 262 392 C246 410 220 418 196 418 C172 418 146 410 130 392 C114 372 110 342 118 318 Z" fill="url(#poison)"/>
+    <!-- glass outline -->
+    <path d="M176 196 L176 252 C120 272 104 316 112 352 C122 398 160 418 196 418 C232 418 270 398 280 352 C288 316 272 272 216 252 L216 196 Z" fill="url(#glass)" stroke="#d7f3e0" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M140 300 Q134 330 144 358" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="10" stroke-linecap="round"/>
+    <!-- cork -->
+    <rect x="168" y="170" width="56" height="32" rx="7" fill="#b07a46" stroke="#5a3a1c" stroke-width="5"/>
+    <!-- bubbles -->
+    <circle cx="214" cy="346" r="9" fill="#e6ffc4" opacity="0.8"/>
+    <circle cx="180" cy="370" r="6" fill="#e6ffc4" opacity="0.7"/>
+    <circle cx="232" cy="378" r="5" fill="#e6ffc4" opacity="0.7"/>
+  </g>
+
+  <!-- drips and fumes -->
+  <path d="M392 382 q-10 18 0 26 q10 -8 0 -26 Z" fill="#7fe02a"/>
+  <circle cx="190" cy="132" r="9" fill="#9dff4a" opacity="0.5"/>
+  <circle cx="212" cy="104" r="6" fill="#9dff4a" opacity="0.4"/>
+  <circle cx="186" cy="82" r="4" fill="#9dff4a" opacity="0.3"/>
+</svg>
