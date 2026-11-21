@@ -9,7 +9,7 @@ No more opening your bags before every pull, applying the wrong rank, or noticin
 ## Features
 
 - **Main Hand and Off Hand buttons**: each applies your chosen poison at the highest rank in your bags. Each button shows the poison's icon, the time and charges left on that weapon, and how many applications you're carrying.
-- **Every poison type**: Instant, Deadly, Crippling, Mind-numbing and Wound. Right-click a button to switch.
+- **Every poison type**: Instant, Deadly, Crippling, Mind-numbing and Wound, plus Forever's Numbing, Atrophic, Sebacious and Occult poisons. Right-click a button to switch.
 - **Expiry warnings**: a reminder when a weapon has no poison, less than 5 minutes left or fewer than 10 charges. You choose both limits, and whether the warning is a chat line, a sound or a glow on the button.
 - **Bag counts** for every poison type, and optionally how many more you could craft from the ingredients you carry.
 - **Key bindings** for both buttons, under Key Bindings > AddOns.

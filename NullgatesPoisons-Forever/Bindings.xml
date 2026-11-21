@@ -1,0 +1,5 @@
+<Bindings>
+    <!-- Secure click bindings: each applies its hand's chosen poison -->
+    <Binding name="CLICK NullgatesPoisonsMainHand:LeftButton" header="NULLGATESPOISONS"/>
+    <Binding name="CLICK NullgatesPoisonsOffHand:LeftButton"/>
+</Bindings>

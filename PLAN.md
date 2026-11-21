@@ -1,6 +1,8 @@
 # Nullgate's Poisons - Forever: Plan
 
-Status: planning, with no code written yet. Planned on 2026-11-20.
+Status: phases 0 to 4 built as 1.0.0-beta.1 on 2026-11-20; the in-game checks wait for testers (`/npoison check`). Planned on 2026-11-20.
+
+Forever data notes: nine poison types (the five Classic ones plus Numbing, Atrophic, Sebacious and Occult); each poison's weapon enchant ID comes from its use spell, so the addon can tell which poison is on a weapon from GetWeaponEnchantInfo.
 
 - **Folder:** `NullgatesPoisons-Forever`
 - **Saved variables:** `NullgatesPoisonsDB` (per character)

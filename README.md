@@ -1,6 +1,6 @@
 # Nullgate's Poisons - Forever
 
-> **Status: planning.** No code yet. See [PLAN.md](PLAN.md).
+> **Status: beta** (1.0.0-beta.1). Looking for rogues to test it. See [CHANGELOG.md](CHANGELOG.md).
 
 **Nullgate's Poisons** is a rogue addon for **World of Warcraft: Forever**. Two buttons apply the poison you chose to each weapon at the highest rank you carry, and the addon warns you before a poison wears off or runs out of charges.
 
@@ -8,7 +8,7 @@
 
 ## How It Works
 
-1. **Pick a poison for each hand**: Instant, Deadly, Crippling, Mind-numbing or Wound.
+1. **Pick a poison for each hand**: Instant, Deadly, Crippling, Mind-numbing, Wound, or Forever's Numbing, Atrophic, Sebacious and Occult poisons.
 2. **Click the Main Hand or Off Hand button** (or press its key binding).
 3. **The addon applies the highest rank you carry** to that weapon.
 
@@ -52,6 +52,18 @@ Not released yet. Once it is:
 
 - **Nullgate's Addon Config**: one settings hub and profile manager for the whole suite.
 - **Nullgate's Restock**, **Quest Tracker**, **Unit Toggles**, **Blacklist** and more.
+
+---
+
+## Development
+
+| Task | Command |
+| :--- | :--- |
+| Refresh the poison data after a client patch | `python tools/generate_poison_data.py` (reads the latest Forever build from wago.tools) |
+| Run the tests | `lua tests/run.lua`, `lua tests/smoke.lua` and `lua tests/locales.lua` |
+| Build `zips/NullgatesPoisons-Forever-<version>.zip` | `.\package.ps1` (or `.\package.ps1 -Version 1.0.0` to set the version first) |
+
+Publishing a GitHub release uploads that version to CurseForge (`.github/workflows/curseforge.yml`); pushes only run the tests.
 
 ---
 
