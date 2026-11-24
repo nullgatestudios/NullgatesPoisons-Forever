@@ -2,6 +2,10 @@
 local _, ns = ...
 
 ns.RegisterLanguagePack("koKR", "한국어", {
+    ["Bug report"] = "버그 보고",
+    ["Select all"] = "모두 선택",
+    ["Press Ctrl+C to copy this report, then paste it into a new report at the link below, with a few words on what happened."] = "Ctrl+C를 눌러 이 보고서를 복사한 다음, 아래 링크의 새 보고서에 붙여 넣고 무슨 일이 있었는지 간단히 적어 주세요.",
+    ["Select link"] = "링크 선택",
     ["%s has no poison."] = "%s: 독 없음.",
     ["%s poison is running low (%s left)."] = "%s 독이 곧 사라집니다 (%s 남음).",
     [", %d charges"] = ", 충전 %d회",

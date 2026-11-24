@@ -2,6 +2,10 @@
 local _, ns = ...
 
 ns.RegisterLanguagePack("ptBR", "Português (Brasil)", {
+    ["Bug report"] = "Relatório de erro",
+    ["Select all"] = "Selecionar tudo",
+    ["Press Ctrl+C to copy this report, then paste it into a new report at the link below, with a few words on what happened."] = "Pressione Ctrl+C para copiar este relatório e cole-o em um novo relatório no link abaixo, com algumas palavras sobre o que aconteceu.",
+    ["Select link"] = "Selecionar link",
     ["%s has no poison."] = "%s está sem veneno.",
     ["%s poison is running low (%s left)."] = "O veneno de %s está acabando (faltam %s).",
     [", %d charges"] = ", %d cargas",

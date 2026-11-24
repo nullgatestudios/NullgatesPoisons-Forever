@@ -154,6 +154,12 @@ OK(not Printed("Off hand has no poison"), "no off-hand weapon: no warning")
 SlashCmdList.NULLGATESPOISONS("")
 OK(NullgatesPoisonsOptions and NullgatesPoisonsOptions.shown, "/npoison opens the settings")
 SlashCmdList.NULLGATESPOISONS("check")
+do -- the report window every Nullgate addon shares
+    local w = NullgateReportWindow
+    OK(w and w.shown and w.url == "https://nullgatestudios.com/report?addon=poisons", "check opens the shared report window with this addon's link")
+    OK(w and w.text and w.text:find("Addon: poisons\nNullgate's Poisons - Forever ", 1, true) == 1, "the report starts with the addon's slug and name")
+    OK(w and w.box.text == w.text and w.link.text == w.url, "the report and the link are in the window, ready to copy")
+end
 local log = table.concat(db.check or {}, "\n")
 OK(log:find("GetWeaponEnchantInfo=yes", 1, true), "check reports which calls exist")
 OK(log:find("-> main instant", 1, true), "check reads the poison on the main hand")
