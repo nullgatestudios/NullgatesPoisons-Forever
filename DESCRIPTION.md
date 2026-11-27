@@ -65,5 +65,6 @@ The addon uses your game's language automatically. You can switch at any time in
 
 ## Good to Know
 
+- **Also in Nullgate's Buffs:** Poisons is part of the all-in-one **Nullgate's Buffs**. If you have both, Poisons runs and they share your settings.
 - The addon only runs for rogues.
 - It never buys, sells or crafts anything for you.
