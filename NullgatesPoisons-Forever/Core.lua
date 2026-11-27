@@ -66,6 +66,9 @@ local function OnEvent(_, event, arg1)
             NameBindings()
         end
         if arg1 == addonName or arg1 == "NullgatesAddonConfig-Forever" then ns.Options.RegisterHub() end
+    elseif event == "PLAYER_LOGOUT" then
+        -- When the settings were last saved: Nullgate's Buffs keeps whichever copy is newer.
+        if ns.db then ns.db.savedAt = time() end
     elseif event == "PLAYER_LOGIN" then
         active = ns.IsRogue()
         if active then
@@ -88,7 +91,7 @@ local function OnEvent(_, event, arg1)
 end
 
 events:SetScript("OnEvent", OnEvent)
-for _, event in ipairs({ "ADDON_LOADED", "PLAYER_LOGIN", "PLAYER_REGEN_ENABLED", "BAG_UPDATE_DELAYED",
+for _, event in ipairs({ "ADDON_LOADED", "PLAYER_LOGIN", "PLAYER_LOGOUT", "PLAYER_REGEN_ENABLED", "BAG_UPDATE_DELAYED",
     "PLAYER_LEVEL_UP", "UNIT_INVENTORY_CHANGED" }) do
     events:RegisterEvent(event)
 end

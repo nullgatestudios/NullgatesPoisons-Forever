@@ -2,7 +2,7 @@
 ## Title: |cff00c0ffNullgate's Poisons|r - |cffffd100Forever|r
 ## Notes: Apply the right poison to each weapon with one click, with expiry and charge warnings.
 ## Author: Nullgate Studios
-## Version: 1.0.0-beta.2
+## Version: 1.0.0-beta.3
 ## IconTexture: Interface\Icons\Ability_Poisons
 ## SavedVariablesPerCharacter: NullgatesPoisonsDB
 ## OptionalDeps: NullgatesAddonConfig-Forever

@@ -2,6 +2,12 @@
 
 All notable changes to Nullgate's Poisons - Forever.
 
+## [1.0.0-beta.3] - 2026-11-27
+
+### New
+
+- **Part of Nullgate's Buffs.** Nullgate's Poisons is now also a module of the all-in-one **Nullgate's Buffs**. If you have both, Poisons runs and they share your settings, so a change in one carries over to the other.
+
 ## [1.0.0-beta.2] - 2026-11-24
 
 ### New
